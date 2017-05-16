@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dsaa:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dsaa.war">
+      <element id="artifact" artifact-name="dsaa:war exploded" />
+    </root>
+  </artifact>
+</component>
