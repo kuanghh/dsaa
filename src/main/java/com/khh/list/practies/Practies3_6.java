@@ -8,12 +8,12 @@ package com.khh.list.practies;
  * 剩下的人为赢家。
  *
  * 例如如果 M = 0，N = 5那么5号获胜
- * 如果M = 2，N = 3 ,那么3号获胜，被清除的人的顺序是2，4，1，5
+ * 如果M = 1，N = 5 ,那么3号获胜，被清除的人的顺序是2，4，1，5
  */
 public class Practies3_6 {
 
     public static void main(String[] args) {
-        int winner = calc_josephus(5, 1);
+        int winner = calc_josephus(6, 1);
         System.out.println(winner);
     }
 
@@ -35,11 +35,12 @@ public class Practies3_6 {
         /**
          * 游戏开始
          * 用count来记录还有多少人在场
-         * 用trans来记录每轮传递还需要经过多少人的手
+         * 用trans来记录每轮传递还需要经过多少人的手,经人手数 = 传递数 + 1
          */
         int count = N;
         int trans = M+1;
         int i = 0;
+
         for(i = 0; count > 1; i++){
             if(i >= N){
                 i = 0;
@@ -48,7 +49,7 @@ public class Practies3_6 {
                 }
             }
             if(a[i][0] != 0){
-                trans--;
+                trans -- ;
             }
             if(trans == 0){
                 a[i][0] = 0;
@@ -58,11 +59,10 @@ public class Practies3_6 {
             }
         }
         int winner = 0;
-        for(int j = 0; j < N ;j++){
-            if(a[j][0] == 1){
-                winner = j;
-            }
+        while(a[winner][0] != 1){
+            winner++;
         }
+
         return winner + 1;
     }
 }
