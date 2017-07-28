@@ -1,6 +1,6 @@
 package com.khh.sort;
 
-import com.khh.sort.base.AbstractSortTemplate;
+import com.khh.base.AbstractSortTemplate;
 
 /**
  * Created by 951087952@qq.com on 2017/7/27.

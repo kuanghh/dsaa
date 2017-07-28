@@ -1,10 +1,12 @@
 package com.khh.sort;
 
-import com.khh.sort.base.AbstractSortTemplate;
+import com.khh.base.AbstractSortTemplate;
 
 /**
  * 三向切分的快速排序，用来解决含有大量重复元素的排序方法
  * Created by 951087952@qq.com on 2017/7/27.
+ *
+ * 时间复杂度介于 N和NlogN之间
  */
 public class Quick3waySort extends AbstractSortTemplate{
 

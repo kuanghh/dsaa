@@ -1,6 +1,6 @@
 package com.khh.sort;
 
-import com.khh.sort.base.AbstractSortTemplate;
+import com.khh.base.AbstractSortTemplate;
 
 /**
  * 希尔排序

@@ -1,10 +1,12 @@
 package com.khh.sort;
 
-import com.khh.sort.base.AbstractSortTemplate;
+import com.khh.base.AbstractSortTemplate;
 
 /**
  * 快速排序
  * Created by 951087952@qq.com on 2017/7/27.
+ *
+ * 时间复杂度为NlogN
  */
 public class QuickSort extends AbstractSortTemplate{
 

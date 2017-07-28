@@ -1,6 +1,6 @@
 package com.khh.sort;
 
-import com.khh.sort.base.AbstractSortTemplate;
+import com.khh.base.AbstractSortTemplate;
 
 /**
  * Created by 951087952@qq.com on 2017/7/27.
@@ -12,6 +12,8 @@ import com.khh.sort.base.AbstractSortTemplate;
  *
  * 对于随机排列的长度为N且主键不重复的数组，平均情况下插入排序需要~N²/4次比较以及~N²/4次交换
  * 。最坏情况下要~N²/2次比较以及~N²/2次交换.最好的情况下需要N-1次比较和0次交换
+ *
+ * 时间复杂度介于 N和N²之间
  */
 public class InsertSort extends AbstractSortTemplate{
 
