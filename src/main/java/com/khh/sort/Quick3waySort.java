@@ -1,6 +1,6 @@
 package com.khh.sort;
 
-import com.khh.base.AbstractSortTemplate;
+import com.khh.sort.base.AbstractSortTemplate;
 
 /**
  * 三向切分的快速排序，用来解决含有大量重复元素的排序方法

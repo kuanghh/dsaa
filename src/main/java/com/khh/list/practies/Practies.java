@@ -10,7 +10,7 @@ package com.khh.list.practies;
  * 例如如果 M = 0，N = 5那么5号获胜
  * 如果M = 1，N = 5 ,那么3号获胜，被清除的人的顺序是2，4，1，5
  */
-public class Practies3_6 {
+public class Practies {
 
     public static void main(String[] args) {
         int winner = calc_josephus(6, 1);

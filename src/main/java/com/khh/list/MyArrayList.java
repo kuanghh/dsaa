@@ -1,6 +1,5 @@
 package com.khh.list;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 
 /**

@@ -1,6 +1,4 @@
-package com.khh.queue;
-
-import com.khh.base.AbstractSortTemplate;
+package com.khh.sort.queue;
 
 /**
  * Created by 951087952@qq.com on 2017/7/28.
