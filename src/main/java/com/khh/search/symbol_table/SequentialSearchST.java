@@ -27,7 +27,7 @@ public class SequentialSearchST<Key,Value> extends ST<Key,Value>{
     private Node first;  // 链表首节点
 
     @Override
-    void put(Key key, Value value) {
+    public void put(Key key, Value value) {
         if(isEmpty()){
             first = new Node(key,value,null);
             return ;
@@ -43,7 +43,7 @@ public class SequentialSearchST<Key,Value> extends ST<Key,Value>{
     }
 
     @Override
-    Value get(Key key) {
+    public Value get(Key key) {
 
         if(isEmpty()){
             return null;
@@ -57,7 +57,7 @@ public class SequentialSearchST<Key,Value> extends ST<Key,Value>{
     }
 
     @Override
-    void delete(Key key) {
+    public void delete(Key key) {
 
         //删除数据，分以下三种情况
 
@@ -90,7 +90,7 @@ public class SequentialSearchST<Key,Value> extends ST<Key,Value>{
     }
 
     @Override
-    int size() {
+    public int size() {
 
         if(first == null){
             return 0;
@@ -104,7 +104,7 @@ public class SequentialSearchST<Key,Value> extends ST<Key,Value>{
     }
 
     @Override
-    Iterable<Key> keys() {
+    public Iterable<Key> keys() {
         List<Key> list = new ArrayList<>();
 
         if(first != null){

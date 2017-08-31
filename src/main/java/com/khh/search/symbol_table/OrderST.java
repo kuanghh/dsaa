@@ -12,37 +12,37 @@ public abstract class OrderST<Key extends Comparable<Key>,Value> extends ST<Key,
      * 最小的键
      * @return
      */
-    abstract Key min();
+    public abstract Key min();
 
     /**
      * 最大的键
      */
-    abstract Key max();
+    public abstract Key max();
 
 
     /**
      *  小于等于 Key 的 最大键
      */
-    abstract Key floor(Key key);
+    public abstract Key floor(Key key);
 
     /**
-     * 大于等于 Key 的 最大键
+     * 大于等于 Key 的 最小键
      */
-    abstract Key ceiling();
+    public abstract Key ceiling(Key key);
 
     /**
      *  小于Key的键的数量
      * @param key
      * @return
      */
-    abstract int rank(Key key);
+    public abstract int rank(Key key);
 
     /**
      * 排名为k的键
      * @param k
      * @return
      */
-    abstract Key select(int k);
+    public abstract Key select(int k);
 
     /**
      * 删除最小的键
@@ -65,7 +65,7 @@ public abstract class OrderST<Key extends Comparable<Key>,Value> extends ST<Key,
      * @param hi
      * @return
      */
-    int size(Key lo, Key hi){
+    public int size(Key lo, Key hi){
 
         if(lo.compareTo(hi) < 0){
             return 0;
@@ -83,7 +83,7 @@ public abstract class OrderST<Key extends Comparable<Key>,Value> extends ST<Key,
      * @param hi
      * @return
      */
-    abstract Iterable<Key> keys(Key lo,Key hi);
+    public abstract Iterable<Key> keys(Key lo,Key hi);
 
     @Override
     public Iterable<Key> keys() {

@@ -21,16 +21,16 @@ public abstract class ST<Key,Value> {
      * @param key
      * @param value
      */
-    abstract void put(Key key, Value value);
+    public abstract void put(Key key, Value value);
 
 
-    abstract Value get(Key key);
+    public abstract Value get(Key key);
 
     /**
      *  put(key,null) 是一种延迟型的实现，而以下方法是为了替代这种默认的方案
      * @param key
      */
-    abstract void delete(Key key);
+    public abstract void delete(Key key);
 
     public boolean contains(Key key){
         return get(key) != null;
@@ -40,7 +40,7 @@ public abstract class ST<Key,Value> {
         return size() == 0;
     }
 
-    abstract int size();
+    public abstract int size();
 
-    abstract Iterable<Key> keys();
+    public abstract Iterable<Key> keys();
 }
